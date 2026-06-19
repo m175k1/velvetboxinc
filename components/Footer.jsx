@@ -1,3 +1,5 @@
+import { asset } from "../data/asset";
+
 export default function Footer() {
   const cols = [
     {
@@ -20,9 +22,11 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-petal to-mauve text-white">
-                ✦
-              </span>
+              <img
+                src={asset("/crest.png")}
+                alt="Velvet Box Inc. peacock crest"
+                className="h-10 w-10 rounded-full object-cover ring-1 ring-white/40"
+              />
               <span className="font-display text-lg uppercase tracking-[0.18em] text-plum">
                 Velvet Box
               </span>

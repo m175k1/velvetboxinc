@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { asset } from "../data/asset";
 
 const links = [
   { label: "Cosmetics", href: "#cosmetics" },
@@ -41,9 +42,11 @@ export default function Navbar() {
           }`}
         >
           <a href="#top" className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-petal to-mauve text-white shadow-soft">
-              <span className="text-base">✦</span>
-            </span>
+            <img
+              src={asset("/crest.png")}
+              alt="Velvet Box Inc. peacock crest"
+              className="h-10 w-10 rounded-full object-cover shadow-soft ring-1 ring-white/40"
+            />
             <span className="font-display text-lg font-600 uppercase tracking-[0.18em] text-plum">
               Velvet&nbsp;Box
             </span>
