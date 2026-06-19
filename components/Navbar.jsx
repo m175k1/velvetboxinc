@@ -42,10 +42,20 @@ export default function Navbar() {
           }`}
         >
           <a href="#top" className="flex items-center gap-2.5">
-            <img
-              src={asset("/crest.png")}
-              alt="Velvet Box Inc. peacock crest"
-              className="h-10 w-10 rounded-full object-cover shadow-soft ring-1 ring-white/40"
+            <span
+              role="img"
+              aria-label="Velvet Box Inc. peacock crest"
+              className="block h-9 w-14 shrink-0 bg-plum"
+              style={{
+                maskImage: `url(${asset("/crest.png")})`,
+                WebkitMaskImage: `url(${asset("/crest.png")})`,
+                maskRepeat: "no-repeat",
+                WebkitMaskRepeat: "no-repeat",
+                maskPosition: "center",
+                WebkitMaskPosition: "center",
+                maskSize: "contain",
+                WebkitMaskSize: "contain",
+              }}
             />
             <span className="font-display text-lg font-600 uppercase tracking-[0.18em] text-plum">
               Velvet&nbsp;Box
