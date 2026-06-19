@@ -69,7 +69,11 @@ export default function Navbar() {
           : "mx-0 mt-0 rounded-none shadow-soft"
       }`}
     >
-      <nav className="container-px grid grid-cols-3 items-center py-3">
+      <nav
+        className={`container-px grid grid-cols-3 items-center transition-[padding] duration-500 ease-out ${
+          scrolled ? "py-1.5" : "py-3"
+        }`}
+      >
         {/* LEFT — menu */}
         <div className="flex items-center justify-start">
           <ul className="hidden items-center gap-7 md:flex">
@@ -96,23 +100,19 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* CENTER — logo */}
-        <motion.a
+        {/* CENTER — logo (collapses on scroll to shrink the bar) */}
+        <a
           href="#top"
-          className="flex justify-center"
+          className="flex justify-center overflow-hidden"
           aria-label="Velvet Box Inc. — home"
-          animate={{
-            opacity: scrolled ? 0 : 1,
-            y: scrolled ? -24 : 0,
-            scale: scrolled ? 0.85 : 1,
-          }}
-          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
           style={{ pointerEvents: scrolled ? "none" : "auto" }}
         >
           <span
             role="img"
             aria-label="Velvet Box Inc."
-            className="block h-16 w-full bg-cream sm:h-20"
+            className={`block w-full bg-cream transition-all duration-500 ease-out ${
+              scrolled ? "h-0 opacity-0" : "h-16 opacity-100 sm:h-20"
+            }`}
             style={{
               maskImage: `url(${asset("/logo.png")})`,
               WebkitMaskImage: `url(${asset("/logo.png")})`,
@@ -124,21 +124,21 @@ export default function Navbar() {
               WebkitMaskSize: "contain",
             }}
           />
-        </motion.a>
+        </a>
 
         {/* RIGHT — account + cart */}
         <div className="flex items-center justify-end gap-1 sm:gap-2">
           <a
             href="#account"
             aria-label="Account"
-            className="grid  deputs h-10 w-10 place-items-center rounded-full text-cream transition-colors hover:bg-white/10"
+            className="grid h-10 w-10 place-items-center rounded-full text-cream transition-colors hover:bg-white/10"
           >
             <UserIcon />
           </a>
           <a
             href="#cart"
             aria-label="Cart"
-            className="relative  deputs grid h-10 w-10 place-items-center rounded-full text-cream transition-colors hover:bg-white/10"
+            className="relative grid h-10 w-10 place-items-center rounded-full text-cream transition-colors hover:bg-white/10"
           >
             <BagIcon />
             <span className="absolute right-1 top-1 grid h-4 w-4 place-items-center rounded-full bg-cream text-[10px] font-bold text-mauve">
