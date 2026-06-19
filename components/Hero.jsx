@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { asset } from "../data/asset";
 
 const ease = [0.22, 1, 0.36, 1];
 
@@ -123,7 +124,7 @@ export default function Hero() {
           <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-rose/60 via-blush to-gold/40 blur-2xl" />
           <div className="relative animate-float overflow-hidden rounded-[2.5rem] shadow-glow ring-1 ring-white/70">
             <img
-              src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80"
+              src={asset("/products/hero.jpg")}
               alt="Velvet Box beauty edit"
               className="h-[34rem] w-full object-cover"
             />

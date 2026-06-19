@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { asset } from "../data/asset";
 
 export default function Featured() {
   return (
@@ -53,7 +54,7 @@ export default function Featured() {
             >
               <div className="overflow-hidden rounded-[2rem] ring-4 ring-white/40">
                 <img
-                  src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80"
+                  src={asset("/products/featured.jpg")}
                   alt="The Soft Glow Velvet Box"
                   className="aspect-square w-full object-cover"
                 />

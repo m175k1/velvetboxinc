@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { item } from "./Reveal";
+import { asset } from "../data/asset";
 
 function Stars({ rating }) {
   return (
@@ -39,7 +40,7 @@ export default function ProductCard({ product }) {
         </button>
 
         <img
-          src={image}
+          src={asset(image)}
           alt={name}
           className="aspect-[4/5] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
         />

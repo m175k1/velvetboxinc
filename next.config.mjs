@@ -11,6 +11,9 @@ const nextConfig = {
   trailingSlash: true, // makes /about -> /about/index.html so Pages serves it
   basePath,
   assetPrefix: basePath || undefined,
+  // Exposed to client code so plain <img src> can prefix local /public paths
+  // with the Pages base path (see data/asset.js). Empty string locally.
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
   images: {
     // GitHub Pages has no image-optimization server, so serve images as-is.
     unoptimized: true,

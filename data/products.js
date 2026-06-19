@@ -33,8 +33,7 @@ export const products = [
     rating: 4.9,
     sold: "3.4k",
     badge: "Bestseller",
-    image:
-      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=900&q=80",
+    image: "/products/1.jpg",
     colors: ["#C04A5B", "#E08DA0", "#8C4A55", "#D96B7A"],
   },
   {
@@ -46,8 +45,7 @@ export const products = [
     rating: 4.8,
     sold: "2.1k",
     badge: "-22%",
-    image:
-      "https://images.unsplash.com/photo-1631730486572-226d1f595b68?auto=format&fit=crop&w=900&q=80",
+    image: "/products/2.jpg",
     colors: ["#F1C9A5", "#E0A87E", "#C98C63"],
   },
   {
@@ -59,8 +57,7 @@ export const products = [
     rating: 4.9,
     sold: "1.8k",
     badge: "New",
-    image:
-      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=80",
+    image: "/products/3.jpg",
     colors: ["#E7B7C4", "#C98BA6", "#A86A86"],
   },
   {
@@ -72,8 +69,7 @@ export const products = [
     rating: 4.7,
     sold: "4.6k",
     badge: "Hot",
-    image:
-      "https://images.unsplash.com/photo-1599733589046-75a93e6c3b4f?auto=format&fit=crop&w=900&q=80",
+    image: "/products/4.jpg",
     colors: ["#EBA6BB", "#F2B5C4", "#D98499"],
   },
   {
@@ -85,8 +81,7 @@ export const products = [
     rating: 4.9,
     sold: "2.9k",
     badge: "Bestseller",
-    image:
-      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=80",
+    image: "/products/5.jpg",
   },
   {
     id: 6,
@@ -97,8 +92,7 @@ export const products = [
     rating: 4.8,
     sold: "1.5k",
     badge: null,
-    image:
-      "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&q=80",
+    image: "/products/6.jpg",
   },
   {
     id: 7,
@@ -109,8 +103,7 @@ export const products = [
     rating: 4.8,
     sold: "980",
     badge: "-30%",
-    image:
-      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=900&q=80",
+    image: "/products/7.jpg",
     colors: ["#F7D6DD", "#FDEDE6", "#C98BA6"],
   },
   {
@@ -122,8 +115,7 @@ export const products = [
     rating: 4.9,
     sold: "1.1k",
     badge: "New",
-    image:
-      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=80",
+    image: "/products/8.jpg",
     colors: ["#F2B5C4", "#FFF7F3", "#D9A86C"],
   },
   {
@@ -135,8 +127,7 @@ export const products = [
     rating: 4.7,
     sold: "760",
     badge: "Hot",
-    image:
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
+    image: "/products/9.jpg",
     colors: ["#EBA6BB", "#8C5A78", "#FFF7F3"],
   },
   {
@@ -148,8 +139,7 @@ export const products = [
     rating: 4.8,
     sold: "5.2k",
     badge: "Bestseller",
-    image:
-      "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=900&q=80",
+    image: "/products/10.jpg",
   },
   {
     id: 11,
@@ -160,8 +150,7 @@ export const products = [
     rating: 4.9,
     sold: "3.0k",
     badge: "New",
-    image:
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80",
+    image: "/products/11.jpg",
     colors: ["#F2B5C4", "#EBA6BB"],
   },
   {
@@ -173,8 +162,7 @@ export const products = [
     rating: 4.6,
     sold: "2.4k",
     badge: null,
-    image:
-      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
+    image: "/products/12.jpg",
     colors: ["#F7D6DD", "#C98BA6", "#FDEDE6"],
   },
 ];
