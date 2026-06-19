@@ -87,7 +87,7 @@ export default function Navbar() {
         {/* CENTER — logo */}
         <a
           href="#top"
-          className="flex justify-center"
+          className="flex justify-center deputs"
           aria-label="Velvet Box Inc. — home"
         >
           <span
