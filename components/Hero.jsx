@@ -150,7 +150,7 @@ export default function Hero() {
             className="glass absolute -right-3 bottom-14 rounded-2xl px-4 py-3 shadow-soft ring-1 ring-white/60"
           >
             <div className="flex -space-x-2">
-              {["#F2B5C4", "#EBA6BB", "#C98BA6", "#D9A86C"].map((c) => (
+              {["#A9CDB4", "#3E9D74", "#2F7D5B", "#7FC8A0"].map((c) => (
                 <span
                   key={c}
                   className="h-6 w-6 rounded-full ring-2 ring-white"

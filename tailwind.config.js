@@ -8,23 +8,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blush: "#F7D6DD",
-        rose: "#F2B5C4",
-        petal: "#EBA6BB",
-        mauve: "#C98BA6",
-        plum: "#8C5A78",
-        cream: "#FFF7F3",
-        sand: "#FDEDE6",
-        gold: "#D9A86C",
-        ink: "#4A3340",
+        blush: "#CFE3D4",
+        rose: "#A9CDB4",
+        petal: "#3E9D74",
+        mauve: "#2F7D5B",
+        plum: "#1F5C43",
+        cream: "#F7F9F5",
+        sand: "#EAF0E8",
+        gold: "#7FC8A0",
+        ink: "#20352B",
       },
       fontFamily: {
         serif: ["var(--font-fraunces)", "Georgia", "serif"],
         sans: ["var(--font-jakarta)", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 18px 50px -20px rgba(140, 90, 120, 0.35)",
-        glow: "0 0 0 1px rgba(255,255,255,0.6), 0 20px 60px -18px rgba(201, 139, 166, 0.55)",
+        soft: "0 18px 50px -20px rgba(31, 92, 67, 0.35)",
+        glow: "0 0 0 1px rgba(255,255,255,0.6), 0 20px 60px -18px rgba(62, 157, 116, 0.55)",
       },
       keyframes: {
         float: {

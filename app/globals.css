@@ -15,10 +15,10 @@ body {
   overflow-x: hidden;
 }
 
-/* Soft pastel selection */
+/* Soft jade selection */
 ::selection {
-  background: #f2b5c4;
-  color: #4a3340;
+  background: #a9cdb4;
+  color: #20352b;
 }
 
 /* Custom scrollbar */
@@ -26,15 +26,15 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #fff7f3;
+  background: #f7f9f5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #eba6bb;
+  background: #3e9d74;
   border-radius: 999px;
-  border: 2px solid #fff7f3;
+  border: 2px solid #f7f9f5;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #c98ba6;
+  background: #2f7d5b;
 }
 
 @layer components {
