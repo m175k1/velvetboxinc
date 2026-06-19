@@ -87,7 +87,7 @@ export default function Navbar() {
         {/* CENTER — logo */}
         <a
           href="#top"
-          className="flex justify-center deputs"
+          className="flex justify-center"
           aria-label="Velvet Box Inc. — home"
         >
           <span
@@ -112,14 +112,14 @@ export default function Navbar() {
           <a
             href="#account"
             aria-label="Account"
-            className="grid h-10 w-10 place-items-center rounded-full text-cream transition-colors hover:bg-white/10"
+            className="grid  deputs h-10 w-10 place-items-center rounded-full text-cream transition-colors hover:bg-white/10"
           >
             <UserIcon />
           </a>
           <a
             href="#cart"
             aria-label="Cart"
-            className="relative grid h-10 w-10 place-items-center rounded-full text-cream transition-colors hover:bg-white/10"
+            className="relative  deputs grid h-10 w-10 place-items-center rounded-full text-cream transition-colors hover:bg-white/10"
           >
             <BagIcon />
             <span className="absolute right-1 top-1 grid h-4 w-4 place-items-center rounded-full bg-cream text-[10px] font-bold text-mauve">
