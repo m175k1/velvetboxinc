@@ -65,7 +65,7 @@ export default function Navbar() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="group relative text-sm font-medium text-cream/85 transition-colors hover:text-white"
+                  className="group relative inline-block origin-center text-[1.1rem] font-medium text-cream/85 transition-all duration-300 hover:scale-[1.4] hover:text-white"
                 >
                   {l.label}
                   <span className="absolute -bottom-1 left-0 h-0.5 w-0 rounded-full bg-cream transition-all duration-300 group-hover:w-full" />
@@ -144,7 +144,7 @@ export default function Navbar() {
                   <a
                     href={l.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-xl px-4 py-3 text-sm font-medium text-cream/85 transition-colors hover:bg-white/10 hover:text-white"
+                    className="block rounded-xl px-4 py-3 text-[1.1rem] font-medium text-cream/85 transition-colors hover:bg-white/10 hover:text-white"
                   >
                     {l.label}
                   </a>
