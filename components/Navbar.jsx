@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { asset } from "../data/asset";
 
@@ -49,13 +49,25 @@ function BagIcon() {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <motion.header
       initial={{ y: -90, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed inset-x-0 top-0 z-50 bg-mauve text-cream shadow-soft"
+      className={`fixed inset-x-0 top-0 z-50 bg-mauve text-cream transition-[margin,border-radius,box-shadow] duration-500 ease-out ${
+        scrolled
+          ? "mx-4 mt-3 rounded-full shadow-glow sm:mx-8"
+          : "mx-0 mt-0 rounded-none shadow-soft"
+      }`}
     >
       <nav className="container-px grid grid-cols-3 items-center py-3">
         {/* LEFT — menu */}
@@ -85,10 +97,17 @@ export default function Navbar() {
         </div>
 
         {/* CENTER — logo */}
-        <a
+        <motion.a
           href="#top"
           className="flex justify-center"
           aria-label="Velvet Box Inc. — home"
+          animate={{
+            opacity: scrolled ? 0 : 1,
+            y: scrolled ? -24 : 0,
+            scale: scrolled ? 0.85 : 1,
+          }}
+          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+          style={{ pointerEvents: scrolled ? "none" : "auto" }}
         >
           <span
             role="img"
@@ -105,7 +124,7 @@ export default function Navbar() {
               WebkitMaskSize: "contain",
             }}
           />
-        </a>
+        </motion.a>
 
         {/* RIGHT — account + cart */}
         <div className="flex items-center justify-end gap-1 sm:gap-2">
