@@ -44,7 +44,7 @@ export default function Navbar() {
             <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-petal to-mauve text-white shadow-soft">
               <span className="text-base">✦</span>
             </span>
-            <span className="font-serif text-xl font-600 tracking-tight text-plum">
+            <span className="font-display text-lg font-600 uppercase tracking-[0.18em] text-plum">
               Velvet&nbsp;Box
             </span>
           </a>

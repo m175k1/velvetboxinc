@@ -23,7 +23,9 @@ export default function Footer() {
               <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-petal to-mauve text-white">
                 ✦
               </span>
-              <span className="font-serif text-xl text-plum">Velvet Box</span>
+              <span className="font-display text-lg uppercase tracking-[0.18em] text-plum">
+                Velvet Box
+              </span>
             </div>
             <p className="mt-4 max-w-xs text-sm text-ink/60">
               Soft, luminous cosmetics, skincare & apparel — curated to make you

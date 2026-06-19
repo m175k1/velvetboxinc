@@ -15,10 +15,10 @@ body {
   overflow-x: hidden;
 }
 
-/* Soft jade selection */
+/* Soft wine selection */
 ::selection {
-  background: #a9cdb4;
-  color: #20352b;
+  background: #e7c9d3;
+  color: #4e1228;
 }
 
 /* Custom scrollbar */
@@ -26,15 +26,15 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f7f9f5;
+  background: #fbf6f7;
 }
 ::-webkit-scrollbar-thumb {
-  background: #3e9d74;
+  background: #8e2649;
   border-radius: 999px;
-  border: 2px solid #f7f9f5;
+  border: 2px solid #fbf6f7;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2f7d5b;
+  background: #6e1d3a;
 }
 
 @layer components {

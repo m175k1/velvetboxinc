@@ -1,11 +1,19 @@
 import "./globals.css";
-import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import { Cinzel, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 
-const fraunces = Fraunces({
+// Classical inscriptional caps — matches the Velvet Box Inc. logo wordmark.
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cinzel",
+});
+
+// Elegant high-contrast serif (with italics) for headings & prices.
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
-  variable: "--font-fraunces",
+  variable: "--font-cormorant",
 });
 
 const jakarta = Plus_Jakarta_Sans({
@@ -22,7 +30,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${jakarta.variable}`}>
+    <html
+      lang="en"
+      className={`${cinzel.variable} ${cormorant.variable} ${jakarta.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

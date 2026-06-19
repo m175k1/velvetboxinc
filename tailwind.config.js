@@ -8,23 +8,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blush: "#CFE3D4",
-        rose: "#A9CDB4",
-        petal: "#3E9D74",
-        mauve: "#2F7D5B",
-        plum: "#1F5C43",
-        cream: "#F7F9F5",
-        sand: "#EAF0E8",
-        gold: "#7FC8A0",
-        ink: "#20352B",
+        blush: "#E7C9D3",
+        rose: "#CE9DAF",
+        petal: "#8E2649",
+        mauve: "#6E1D3A",
+        plum: "#4E1228",
+        cream: "#FBF6F7",
+        sand: "#F4E7EC",
+        gold: "#C77E94",
+        ink: "#3A1320",
       },
       fontFamily: {
-        serif: ["var(--font-fraunces)", "Georgia", "serif"],
+        display: ["var(--font-cinzel)", "var(--font-cormorant)", "serif"],
+        serif: ["var(--font-cormorant)", "Georgia", "serif"],
         sans: ["var(--font-jakarta)", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 18px 50px -20px rgba(31, 92, 67, 0.35)",
-        glow: "0 0 0 1px rgba(255,255,255,0.6), 0 20px 60px -18px rgba(62, 157, 116, 0.55)",
+        soft: "0 18px 50px -20px rgba(110, 29, 58, 0.35)",
+        glow: "0 0 0 1px rgba(255,255,255,0.6), 0 20px 60px -18px rgba(142, 38, 73, 0.55)",
       },
       keyframes: {
         float: {
