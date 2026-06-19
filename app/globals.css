@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-ink font-sans antialiased;
+  overflow-x: hidden;
+}
+
+/* Soft pastel selection */
+::selection {
+  background: #f2b5c4;
+  color: #4a3340;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff7f3;
+}
+::-webkit-scrollbar-thumb {
+  background: #eba6bb;
+  border-radius: 999px;
+  border: 2px solid #fff7f3;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c98ba6;
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full
+      bg-gradient-to-r from-petal to-mauve px-7 py-3 text-sm font-semibold
+      text-white shadow-soft transition-all duration-300
+      hover:shadow-glow hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border
+      border-petal/50 bg-white/60 px-7 py-3 text-sm font-semibold text-plum
+      transition-all duration-300 hover:bg-white hover:-translate-y-0.5;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-white/70 px-3.5 py-1.5
+      text-xs font-medium text-plum ring-1 ring-petal/40;
+  }
+
+  /* shimmering text gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-mauve via-petal to-gold bg-clip-text text-transparent;
+  }
+}
+
+/* Decorative animated grain-free gradient blobs */
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Shimmer sweep used on featured banner */
+.shimmer-sweep::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  animation: shimmer 2.6s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
